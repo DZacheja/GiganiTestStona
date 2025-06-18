@@ -1,28 +1,70 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <title>Strona z Memami</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Sklep Dropshippingowy</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Witamy na stronie z memami!</h1>
-    <nav>
-      <a href="index.html">Strona Główna</a>
-      <a href="about.html">O nas</a>
-      <a href="contact.html">Kontakt</a>
-    </nav>
-  </header>
+    <header>
+        <h1>Repliki & Gadżety - Sklep Dropshippingowy</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Strona Główna</a></li>
+                <li><a href="#" onclick="showPage('gadgets')">Gadżety</a></li>
+                <li><a href="#" onclick="showPage('clothing')">Ubrania</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <h2>Losowy Mem</h2>
-    <div id="meme-container">
-      <img id="random-meme" src="" alt="Losowy mem">
-    </div>
-    <button onclick="loadRandomMeme()">Pokaż inny mem</button>
-  </main>
+    <main>
+        <section id="home" class="page">
+            <h2>Witamy w naszym sklepie</h2>
+            <p>Znajdziesz tu najnowsze gadżety i repliki topowych marek w najlepszych cenach!</p>
+        </section>
 
-  <script src="js/script.js"></script>
+        <section id="gadgets" class="page hidden">
+            <h2>Gadżety</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://www.ditur.pl/media/catalog/product/cache/9213dd647401eec95bc47dd3b1622a89/m/x/mx4d3dh-a.jpg">
+                    <h3>Apple Watch Ultra 2 Pro Extra Super MAX - 100% Orginal</h3>
+                    <p>Wygląda jak Apple Watch, ale jest droższy i gorszy  i kosztuje 10 000 zł</p>
+                </div>
+                <div class="product">
+                    <img src="https://image.ceneostatic.pl/data/products/100483344/9e96c3f3-198f-4f1b-aca7-8bcca89fbd49_i-apple-airpods-max-gwiezdna-szarosc-mgyh3zm-a.jpg" alt="Słuchawki">
+                    <h3>Super drogie słuchawki</h3>
+                    <p>Replika AirPods Max za jedyne 59 999 zł</p>
+                </div>
+            </div>
+                <div class="product">
+                    <img src="https://u-mercari-images.mercdn.net/photos/m16963384064_1.jpg" alt="Zabawka">
+                    <h3>Popularna zabawka dla dzieci</h3>
+                    <p>100% Orginal, certyfikat z niemiec prosto od chińskiego dostawcy! 1kPLN</p>
+                </div>
+        </section>
+
+        <section id="clothing" class="page hidden">
+            <h2>Ubrania Premium</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://image.ceneostatic.pl/data/products/133145623/p-t-shirt-koszulka-goczi-premium-guczi.jpg" alt="Koszulka Gucci">
+                    <h3>Koszulka Gucci Replica</h3>
+                    <p>Idealna kopia za 99 zł</p>
+                </div>
+                <div class="product">
+                    <img src="https://montemoon.com/images/wh547/132000-133000/Adidas-Yeezy-Boost-350-V2-AH2203-Szary_%5B132486%5D_780.jpg" alt="Yeezy">
+                    <h3>Buty Yeezy Boost 350</h3>
+                    <p>Replika klasy A – tylko 149 zł</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dropshipping Demo. Produkty są wyłącznie poglądowe.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
